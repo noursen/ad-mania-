@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+
+body{
+    margin:0;
+    padding: 0;
+
+background-image: url('6.jpg');
+
+
+    font-family: 'Roboto Condensed',sans-serif;
+    
+}
+.area
+{
+    background-color: transparent;
+    border:transparent;
+    resize: none;
+}
+section{
+    width:100% ;
+    height: 100vh;
+    height: auto;
+    
+    /*background-size:contain;*/
+    
+
+}
+section .leftBox {
+    width: 50%;
+    height: 100%;
+    float: left;
+    padding: 50px;
+    box-sizing: border-box;
+    /*max-width: 100%;
+    max-height: 100%*/
+
+}
+section .leftBox .content{
+    color: #fff;
+    background:rgba(0,0,0,.5);
+    padding: 40px;
+    transition: .5s;
+}
+
+section .leftBox .content:hover{
+background:rgba(245, 245, 23, 0.993);
+
+}
+section .leftBox .content h1{
+    margin:0;
+    padding: 0;
+    font-size: 50px;
+    text-transform: uppercase;
+}
+section .leftBox .content p{
+    margin: 10px 0 0;
+    padding: 0;
+}
+
+section .events{
+    position:relative;
+   width: 50%;
+   height: 100%;
+    background: rgba(0,0,0,.5);
+    float: right;
+    box-sizing: border-box;
+}
+section .events ul{
+    
+    top: 50%;
+    
+    margin: 0;
+    padding: 40px;
+    box-sizing: border-box;
+}
+section .events ul li{
+    list-style:none ;
+    /*background: white;*/
+    box-sizing: border-box;
+    height: 200px;
+    margin: 15px 0;
+
+}
+section .events ul li .time{
+    position:relative;
+    padding: 20px;
+    background: #262626;
+    box-sizing: border-box;
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-transform: center;
+    transition: .5s;
+
+}
+/*section .navigation { height:32px;}
+section .navigation  ul{ list-style-type: none;}
+section .navigation  ul li{ float:right; display:inline; margin-right:2px;}
+section .navigation  ul li a,
+section .navigation  ul li a span { float:left; height:36px; background-color:gold ;border-radius: 5px; padding:0 0 0 15px;}
+section .navigation  ul li a span { background-position:right 0; padding:0 15px 0 0;}
+section .navigation  ul li a { line-height:36px; color:black; text-decoration: none;font-size: 15px;font-family: 'Open Sans',sans-serif; }
+
+section .navigation  ul li a.active,
+section .navigation  ul li a:hover { background-position:0 bottom;}
+
+section .navigation  ul li a.active span,
+section .navigation  ul li a:hover span{ background-position:right bottom;color: white ;}
+
+section .navigation  ul li a.active { font-size:15px; font-weight: bold; color:white;font-family: 'Open Sans',sans-serif;  }
+*/
+section .events ul li:hover .time{
+    background:rgba(245, 245, 23, 0.993);
+}
+
+section .events ul li .time h2 {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+color: #fff;
+font-size: 60px;
+line-height: 30px;
+}
+
+section .events ul li .time h2 span{
+    font-size: 30px;
+
+}
+section .events ul li .details {
+  padding: 20px;
+  background:rgba(255,255,255,.6);
+  color:black; 
+  box-sizing: border-box;
+  width: 70%;
+  height: 100%;
+  float: left;
+}
+
+section .events ul li .details h3{
+position: relative;
+margin: 0;
+padding: 0;
+font-size: 22px;
+}
+
+section .events ul li .details p{
+    position: relative;
+    margin:10px 0 0;
+    padding: 0;
+    font-size: 16px;
+    
+    }
+
+    section .events ul li .details a{
+       display: inline-block;
+       text-decoration: none;
+       text-transform: uppercase;
+       padding: 10px 15px;
+       border: 2px solid #262626;
+        margin-top: 15px;
+        font-size: 18px;
+        transition: .5s;  
+        }
+
+
+        section .events ul li .details a:hover{
+           color: #fff;
+           background:rgba(245, 245, 23, 0.993);
+border-color:rgba(245, 245, 23, 0.993); ;
+
+
+        }
+
+        @media (max-width:991px)
+        {
+  section {
+
+    height: 100%;
+    background-position: center;
+           }
+           secttion .leftBox{
+               width:100% ;
+               height: auto;
+               float: none;
+               padding: 20px;
+           }
+           section .events{
+              
+               width: 100%;
+               height: 100%;
+               background:transparent;
+               float: none;
+               
+           }
+           section .leftBox .content{
+               padding: 20px;
+
+           }
+           section .leftBox .content h1{
+               font-size: 30px;
+
+           }
+
+           section .events ul {
+               position: relative;
+               transform: translateY(0px);
+               padding: 0 20px 20px;
+           }
+           section .events ul li {
+
+            height: auto;
+
+           }
+           section .events ul li .time {
+               width: 80px;
+               height: 80px;
+               padding: 0;
+           }
+           section .events ul li .time h2{
+               font-size: 30px;
+               line-height: 24px;
+           }
+           section .events ul li .time h2 span {
+               font-size: 20px;
+           }
+           section .events ul li .details {
+               width: 100%;
+               float: none;
+               padding-left: 100px;
+               background:transparent;
+
+           }
+           section .events ul li .details a {
+            padding: 5px 10px;
+           }
+           section .events ul li {
+               height: auto;
+               background:rgba(255,255,255,.9);
+           }
+
+
+
+
+        }
+
+
+
+        
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

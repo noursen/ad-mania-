@@ -1,0 +1,111 @@
+:root {
+
+    --dark-color :#2d2c2c;
+    --purple-solid: #358a4f;
+    --purple-transparent: rgba(53 ,10 ,79 ,.7);
+    --purple-transparent-alt: rgba(53,10,79,.5);
+    --purple-light: #8f58fb;
+    --yellow-solid: #fa9e2c;
+    --gradient-color: linear-gradient(to right,var(--yellow-solid),var(--purple-light));
+    --gradient-color-alt: linear-gradient(to right,var(--purple-light),var(--yellow-solid));
+}
+
+
+
+
+
+.events{
+    background-color: #f2f6f9;
+
+}
+.image-wrap{
+    position: relative;
+    height: 15rem;
+    width: 30rem;
+}
+.image-wrap::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #4c00827e;
+}
+.event-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.event-name {
+    font-size: 1.6rem;
+    background-color: gold;
+    color:#fff;
+    padding:.10rem 0.5rem;
+    position: absolute;
+    left: 0;
+    bottom: 2.5rem;
+    z-index: 10;
+}
+.event-price{
+    display: block;
+    font-size: 2rem;
+    font-weight: bold;
+    color: gold;
+}
+.per-night{
+    color: darkblue;
+    font-size: 1rem;
+    font-weight: 100;
+}
+.events-btn{
+    color: darkblue;
+    padding: 0;
+    transition: color .5s;
+}
+.events-btn:hover{
+color: gold;
+}
+
+.heading {
+    display: block;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+.sub-heading {
+font-size: 1.7rem;
+font-family:'Courgette', cursive ;
+font-weight: 300;
+color: #a5a5a5;
+
+}
+
+
+.section-head {
+    text-align: center;
+    margin-bottom:5rem ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
